@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="isvehiclegood" name="Is vehicle good" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="67a0ab9" camunda:diagramRelationId="a49b3f45-b1c4-4206-9d11-6abe90c6b22b" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0">
+  <decision id="Decision_1o9x6x2" name="IsVehicleGood">
+    <decisionTable id="DecisionTable_0od9umg">
+      <input id="InputClause_1lkewj7">
+        <inputExpression id="LiteralExpression_1hpxfur" typeRef="string">
+          <text>vehicle</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0vr9dus">
+        <inputExpression id="LiteralExpression_1db8kg1" typeRef="number">
+          <text>engine</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0nb62d4" name="result" typeRef="boolean" />
+      <rule id="DecisionRule_0fmj951">
+        <inputEntry id="UnaryTests_13srucf">
+          <text>"Mazda"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vgg9qp">
+          <text>3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mw5tsq">
+          <text>"Yes"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h0blki">
+        <inputEntry id="UnaryTests_1s0q3l6">
+          <text>"Ford"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0idhrxp">
+          <text>2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1obyvp2">
+          <text>"No"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape id="DMNShape_19syi0y" dmnElementRef="Decision_1o9x6x2">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
